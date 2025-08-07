@@ -1,0 +1,258 @@
+
+
+        .payment-form-section {
+            padding: 0;
+            background-color: #fff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        
+        .cmp-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        .cmp-payment-layout {
+            display: flex;
+            gap: 40px;
+            min-height: 600px;
+            align-items: center;
+        }
+
+        .cmp-payment-image {
+            flex: 1;
+            position: relative;
+        }
+
+        .cmp-image {
+            position: sticky;
+            top: 20px;
+            height: 100%;
+        }
+
+        .cmp-payment-image img {
+            width: 100%;
+            /* height: 100%; */
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .cmp-payment-form {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cmp-payment-form form {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .form-required-text {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        .cmp-form-field {
+            margin-bottom: 24px;
+            width: 100%;
+        }
+
+        .cmp-form-field label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            color: #000;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        .cmp-form-field label::after {
+            content: '*';
+            color: #000;
+            margin-left: 4px;
+        }
+
+        .cmp-form-field-input,
+        .cmp-form-field-select {
+            width: 100%;
+            position: relative;
+        }
+
+        .cmp-form-field-input input,
+        .cmp-form-field-select select {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            color: #000;
+            box-sizing: border-box;
+            height: 48px;
+            background-color: #fff;
+        }
+
+        .cmp-form-field-input input:focus,
+        .cmp-form-field-select select:focus {
+            outline: none;
+            border-color: #003087;
+            box-shadow: 0 0 0 1px #003087;
+        }
+
+        .cmp-form-field-input input::placeholder {
+            color: #666;
+        }
+
+        .cmp-form-field-select select {
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 16px center;
+            background-size: 16px;
+            padding-right: 48px;
+        }
+
+        .cmp-form-field-checkbox {
+            margin: 24px 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            width: 100%;
+        }
+
+        .cmp-form-field-checkbox input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            margin-top: 2px;
+        }
+
+        .cmp-form-field-checkbox label {
+            font-size: 14px;
+            color: #666;
+            flex: 1;
+            line-height: 1.5;
+        }
+
+        .cmp-form-field-checkbox label::after {
+            content: none;
+        }
+
+        .cmp-link {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .cmp-link:hover {
+            text-decoration: underline;
+        }
+
+        .cmp-button-wrapper {
+            margin-top: 30px;
+            width: 100%;
+        }
+
+        .cmp-button {
+            width: 100%;
+            padding: 16px 24px;
+            background-color: #b38c7a;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            box-sizing: border-box;
+            /* height: 52px; */
+        }
+
+        .cmp-button:hover {
+            background-color: #002266;
+        }
+
+        input[type="date"] {
+            position: relative;
+            padding-right: 48px;
+        }
+
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            width: 20px;
+            height: 20px;
+        }
+
+        @media (max-width: 1024px) {
+            .cmp-payment-layout {
+                gap: 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+         .footer-brandbar{
+            display: none;
+         }
+            .payment-form-section {
+                padding: 40px 0;
+                min-height: auto;
+            }
+            .online-paymentLink{
+               display: none;
+            }
+
+            .cmp-payment-layout {
+                flex-direction: column;
+                min-height: auto;
+            }
+
+            .cmp-payment-image {
+                display: none;  /* Hide image on mobile */
+            }
+
+            .cmp-payment-form form {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .cmp-container {
+                padding: 0 15px;
+            }
+
+            .cmp-payment-image {
+                max-height: 300px;
+            }
+
+            .cmp-form-field label,
+            .cmp-form-field-input input,
+            .cmp-form-field-select select {
+                font-size: 14px;
+            }
+        }
+
+        .paytitle {
+        font-family: "Inter", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+        font-weight: 500;
+        font-size: 43px;
+        font-style: normal;
+        line-height: 115%;
+        display: block;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    #hotel-header .navigation .cmp-navigation__item{
+      padding-bottom: 0 !important;
+    }
+    #xf-primary-nav .image{
+      margin: 0 !important;
+    }
