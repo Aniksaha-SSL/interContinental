@@ -1,0 +1,217 @@
+.page-skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* HEADER */
+.header-skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.topbar-placeholder {
+  height: 20px;
+  background: #e0e0e0;
+}
+
+.online-payment-placeholder {
+  height: 40px;
+  background: #e0e0e0;
+}
+
+.nav-placeholder {
+  margin: 0 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-placeholder {
+  width: 180px;
+  height: 40px;
+  background: #e0e0e0;
+  border-radius: 4px;
+}
+
+.menu-placeholder {
+  flex: 1;
+  height: 20px;
+  background: #e0e0e0;
+  margin: 0 20px;
+  border-radius: 4px;
+}
+
+.button-placeholder.small {
+  width: 100px;
+  height: 30px;
+  background: #d0d0d0;
+  border-radius: 4px;
+}
+
+/* PAGE TITLE */
+.title-placeholder {
+  width: 350px;
+  height: 24px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
+}
+
+/* MAIN CONTENT */
+.reservation-section {
+  margin-left: 20%;
+  margin-right: 5%;
+  display: flex;
+  gap: 30px;
+}
+
+.image-placeholder {
+  width: 400px;
+  height: 300px;
+  background: #e0e0e0;
+  border-radius: 8px;
+}
+
+.form-placeholder {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.input-placeholder {
+  height: 36px;
+  background: #e0e0e0;
+  border-radius: 4px;
+}
+
+.checkbox-placeholder {
+  width: 20px;
+  height: 20px;
+  background: #e0e0e0;
+  border-radius: 4px;
+}
+
+.button-placeholder.large {
+  height: 40px;
+  background: #d0d0d0;
+  border-radius: 6px;
+  width: 50%;
+}
+
+/* IHG SECTION */
+.ihg-section {
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 12px;
+}
+
+.logo-placeholder.small {
+  height: 40px;
+  background: #e0e0e0;
+  border-radius: 4px;
+}
+
+/* FOOTER */
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.social-media-placeholder {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon-placeholder {
+  width: 30px;
+  height: 30px;
+  background: #e0e0e0;
+  border-radius: 50%;
+}
+
+.company-placeholder {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-line {
+  height: 14px;
+  background: #e0e0e0;
+  border-radius: 4px;
+}
+
+.payment-placeholder {
+  height: 30px;
+  background: #e0e0e0;
+  border-radius: 4px;
+}
+
+.card {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f1dede;
+}
+
+.image-placeholder-logo {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 80px;
+  background: #e0e0e0;
+  border-radius: 8px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.justify-content-center {
+  justify-content: center;
+}
+
+.media-link {
+  width: 20%;
+  background-color: #d0d0d0;
+  height: 50px;
+  margin-left: 10px;
+}
+
+.image-placeholder-footer {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3%;
+  height: 30px;
+  background: #e0e0e0;
+  border-radius: 8px;
+}
+
+.image-placeholder {
+  width: 400px;
+  height: 300px;
+  background: #e0e0e0;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .image-placeholder {
+    display: none;
+  }
+}

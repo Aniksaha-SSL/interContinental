@@ -1,3 +1,4 @@
+import { Fragment } from "react/jsx-runtime";
 
 export default function Payment() {
 
@@ -16,14 +17,14 @@ export default function Payment() {
     };
 
   return (
-    <div className="page basicpage ">
+    <Fragment>
         <div>
             <div>
                 <header id="uhf_headerWrapper" className="uhf_headerFooter sl_norewrite">
                 <div className="uhf_header_utility_bar">
                     <div id="svgSprites" style={{display: 'none'}}>
                     <svg xmls="http://www.w3.org/2000/svg" xmls:xlink="http://www.w3.org/1999/xlink" />
-                    </div>hoteldetail
+                    </div>
                     {/* Regent specific labels for Wallet form */}
                     {/* (empty currentStyle.travelAdvisoryLink ) && */}
                     <input id="UHF_country" type="hidden" defaultValue="us" />
@@ -188,7 +189,6 @@ export default function Payment() {
                         <div className="mobileNavContainer">
                             <div className="mobileNavInner mobileNav-hidden">
                             <div className="mobileNavMenu">
-                                {/* START : Hamburger : Mobile Brand nav menu */}
                                 <ul className="mobileNavMenu-list list-unstyled">
                                 <li className="mobileNavHeading">
                                     <a className="mobileNavLink" href="javascript:void(0);">INTERCONTINENTAL HOTELS AND RESORTS</a>
@@ -971,6 +971,6 @@ export default function Payment() {
             
             </footer>
         </div>
-    </div>
+    </Fragment>
   )
 }

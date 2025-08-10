@@ -1,16 +1,12 @@
 import './App.css'
+import Loading from './Loading'
 import Payment from './payment'
-import PaymentResponse from './PaymentResponse'
 
 function App() {
-
-
-
-
   return (
-    
     <div>
-      <Payment />
+      {/* <Payment /> */}
+      <Loading />
     {/* <PaymentResponse /> */}
     </div>
   )
